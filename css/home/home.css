@@ -1,0 +1,101 @@
+.header-bg {
+  background: #100b00;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.header-img img {
+  max-width: 85%;
+}
+
+.header-menu {
+  display: flex;
+  gap: 32px;
+}
+
+.header-menu a {
+  padding: 5px 20px;
+  gap: 20px;
+}
+
+.intro-bg {
+  background: var(--c3);
+  background-image: url("../../img/decor.svg");
+  background-repeat: no-repeat;
+}
+
+.intro-img img {
+  display: block;
+  margin: 0 auto;
+  mix-blend-mode: luminosity;
+}
+
+.intro-img {
+  position: relative;
+}
+
+.intro a {
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: -2px 3px 0px var(--c15);
+  justify-content: center;
+}
+
+.intro a::after {
+  content: "";
+  display: block;
+  width: 33px;
+  height: 23px;
+  background: url("../../img/seta.svg") no-repeat center;
+  position: absolute;
+  right: -45px;
+  top: 8px;
+}
+
+.work-bg {
+  background: var(--c16);
+}
+
+.work-content {
+  position: relative;
+  max-width: 720px;
+  max-height: 418px;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+.bike1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.bike2 {
+  position: absolute;
+  top: 60%;
+  left: 10%;
+}
+
+.iris1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.iris2 {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  z-index: 1;
+}
+.iris3 {
+  position: relative;
+  top: 40%;
+  left: 40%;
+  z-index: 3;
+}
