@@ -29,14 +29,52 @@
   background-repeat: no-repeat;
 }
 
-.intro-img img {
+.intro {
+  position: relative;
+  height: 648px;
+}
+
+.intro-content img {
+  position: absolute;
   display: block;
   margin: 0 auto;
   mix-blend-mode: luminosity;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: move-left;
 }
 
-.intro-img {
-  position: relative;
+.intro-txt {
+  position: absolute;
+  animation-fill-mode: forwards;
+  left: 65%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation-name: appear;
+  animation-delay: 1.5s;
+  animation-duration: 1.5s;
+}
+
+@keyframes move-left {
+  0% {
+    left: 50%;
+  }
+  100% {
+    left: 25%;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .intro a {
