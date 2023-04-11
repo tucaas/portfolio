@@ -171,6 +171,12 @@ h1::before {
   width: 205px;
   height: 205px;
   gap: 32px;
+  transition: 0.3s;
+}
+
+.work-link img:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 
 .work1:hover .bike1 {
@@ -212,7 +218,7 @@ h1::before {
 }
 .iris3 {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 0%;
   z-index: 3;
 }
@@ -294,7 +300,12 @@ h1::before {
 }
 
 .footer {
-  margin-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 40px;
+}
+
+.footer-img img {
+  padding: 15px;
 }
 
 .footer-menu li,
@@ -303,4 +314,32 @@ a {
   padding: 5px;
   text-align: right;
   position: relative;
+}
+
+.email::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 20px;
+  background: url("../img/email.svg") no-repeat center;
+  position: absolute;
+  z-index: 1;
+}
+.ig::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url("../img/ig.svg") no-repeat center;
+  position: absolute;
+  z-index: 1;
+}
+.wp::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url("../img/wpp.svg") no-repeat center;
+  position: absolute;
+  z-index: 1;
 }
