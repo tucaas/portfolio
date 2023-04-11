@@ -302,10 +302,27 @@ h1::before {
 .footer {
   padding-top: 15px;
   padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .footer-img img {
+  display: block;
+  float: left;
+  margin-right: 10px;
   padding: 15px;
+}
+
+.footer ul {
+  max-width: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer li {
+  display: block;
+  margin-bottom: 10px;
 }
 
 .footer-menu li,
@@ -316,14 +333,17 @@ a {
   position: relative;
 }
 
-.email::before {
+.footer-menu {
+  place-content: right;
+  margin-right: none;
+}
+.email a::before {
   content: "";
   display: block;
   width: 25px;
   height: 20px;
   background: url("../img/email.svg") no-repeat center;
   position: absolute;
-  z-index: 1;
 }
 .ig::before {
   content: "";
@@ -332,7 +352,6 @@ a {
   height: 25px;
   background: url("../img/ig.svg") no-repeat center;
   position: absolute;
-  z-index: 1;
 }
 .wp::before {
   content: "";
@@ -341,5 +360,4 @@ a {
   height: 25px;
   background: url("../img/wpp.svg") no-repeat center;
   position: absolute;
-  z-index: 1;
 }
