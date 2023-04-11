@@ -292,7 +292,6 @@ h1::before {
 
 .footer-bg {
   max-width: 100%;
-  /* height: 260px; */
   background: var(--c1);
   background-image: url("../../img/decor-footer.svg");
   background-position: 500% top;
@@ -300,24 +299,23 @@ h1::before {
 }
 
 .footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr;
   padding-top: 15px;
   padding-bottom: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 
 .footer-img img {
-  display: block;
-  float: left;
+  align-items: center;
   margin-right: 10px;
   padding: 15px;
 }
 
-.footer ul {
-  max-width: 400px;
-  margin: 0;
-  padding: 0;
+.footer-menu {
+  display: block;
+  grid-column: 2;
+  grid-row: 2;
 }
 
 .footer li {
@@ -337,27 +335,33 @@ a {
   place-content: right;
   margin-right: none;
 }
-.email a::before {
+.email::before {
   content: "";
   display: block;
   width: 25px;
   height: 20px;
-  background: url("../img/email.svg") no-repeat center;
+  background: url("../../img/email.svg") no-repeat center;
   position: absolute;
+  top: 8px;
+  right: 320px;
 }
 .ig::before {
   content: "";
   display: block;
   width: 25px;
   height: 25px;
-  background: url("../img/ig.svg") no-repeat center;
+  background: url("../../img/ig.svg") no-repeat center;
   position: absolute;
+
+  right: 320px;
 }
 .wp::before {
   content: "";
   display: block;
   width: 25px;
   height: 25px;
-  background: url("../img/wpp.svg") no-repeat center;
+  background: url("../../img/wpp.svg") no-repeat center;
   position: absolute;
+
+  right: 320px;
 }
