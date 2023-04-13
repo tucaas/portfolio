@@ -11,3 +11,10 @@
 .fmain {
   font: 900 3.75rem "Red Hat Display", sans-serif;
 }
+
+@media (max-width: 1200px) {
+  .f2 {
+    font-size: 1rem;
+    font-weight: 600;
+  }
+}
