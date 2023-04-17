@@ -3,3 +3,5 @@
 @import "./utilities/font.css";
 
 @import "./home/home.css";
+@import "./about/about.css";
+@import "./about/cv.css";

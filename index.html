@@ -22,14 +22,24 @@
         <img src="./img/logo.svg" alt="tucas barcelos">
       </div>
       <ul class="header-menu">
-        <li><a class="c1 f2" href="">home</a></li>
-        <li><a class="c1 f2" href="">about me</a></li>
-        <li><a class="c1 f2" href="">contact</a></li>
+        <li><a class="c1 fmenu" href="./index.html">home</a></li>
+        <li><a class="c1 fmenu" href="./about.html">about me</a></li>
+        <li><a class="c1 fmenu" href="./contact.html">contact</a></li>
       </ul>
-      <div class="burger">
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+      <div class="dropdown">
+        <button class="dropbtn">
+          <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </button>
+        <div class="dropdown-content">
+          <a class="c1 fmenu" href="./index.html">home</a>
+          <a class="c1 fmenu" href="./about.html">about me</a>
+          <a class="c1 fmenu" href="./contact.html">contact</a>
+        </div>
       </div>
     </div>
   </header>
@@ -38,13 +48,20 @@
     <div class="intro container-2">
       <div class="intro-content">
         <img src="./img/profile-none (1).png" alt="">
-        <a class="c1 f1" href="#work">take a look at my work</a>
+        <a class="c1 fscroll" href="#work">take a look at my work</a>
         <div class="intro-txt">
           <h1 class="fmain c10">UX/UI Design</h1>
           <h1 class="fmain c10">HTML, CSS, JavaScript</h1>
           <h1 class="fmain c10">ILLUSTRATION</h1>
         </div>
+        <div class="intro-txt-s">
+          <h1 class="fs c1">UX/UI Design</h1>
+          <h1 class="fs c1">HTML, CSS, JavaScript</h1>
+          <h1 class="fs c1">ILLUSTRATION</h1>
+        </div>
+
       </div>
+
 
     </div>
   </main>
@@ -104,5 +121,6 @@
       </div>
     </div>
   </footer>
-  <script src="./js/script.js"></script>
+
+  <script src="./script/script.js"></script>
 </body>
