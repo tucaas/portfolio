@@ -72,8 +72,11 @@
     left: 0%;
     right: 0%;
   }
-  .skills {
-    display: none;
+  .skill h1 {
+    padding: 0px 8px 32px 8px;
+  }
+  .language ul:last-child {
+    padding-bottom: 40px;
   }
 }
 @media screen and (max-width: 500px) {

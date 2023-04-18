@@ -31,7 +31,6 @@ ul {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
-  /* overflow: hidden; */
 }
 
 .container-2 {
@@ -43,6 +42,16 @@ ul {
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
+}
+
+.container3 {
+  position: relative;
+  max-width: 900px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ::-webkit-scrollbar {

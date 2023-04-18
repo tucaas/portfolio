@@ -1,0 +1,102 @@
+.contact-title-bg {
+  background: var(--c3);
+  background-image: url("../../img/decor.svg");
+  background-repeat: no-repeat;
+  background-position: -50px;
+}
+
+.contact-title {
+  padding: 48px 0px 48px 0px;
+}
+
+.form-title h2 {
+  padding: 40px 0px 0px 0px;
+}
+
+.form-bg {
+  background: var(--c16);
+}
+
+.form {
+  padding: 24px 0px 48px 0px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form textarea {
+  font: 400 1rem/1.5 "red hat display", sans-serif;
+  background: var(--c1);
+  border: 1px solid var(--c12);
+  padding: 12px;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form textarea {
+  height: 200px;
+}
+
+.form input[type="text"]:focus,
+.form input[type="email"]:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: var(--c2);
+  background: var(--c1);
+  box-shadow: 0 0 0 2px #fea;
+}
+
+textarea::placeholder,
+input::placeholder {
+  color: var(--c12);
+  font: 600 1rem "red hat display", sans-serif;
+}
+
+.name,
+.email,
+.message {
+  padding: 8px;
+}
+
+.button {
+  display: inline-block;
+  padding: 8px 16px;
+  background: var(--c10);
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-transform: lowercase;
+  color: var(--c16);
+  font: 900 1.125rem/1.35 "red hat display", sans-serif;
+  max-width: max-content;
+  border: none;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12px 0px 40px 0px;
+  gap: 60px;
+}
+
+.social-links li a {
+  padding-left: 0px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .social-links {
+    gap: 40px;
+  }
+  .social-links p {
+    display: none;
+  }
+}
