@@ -234,6 +234,31 @@ h1 {
   background-color: var(--c1);
 }
 
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--c1);
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease, visibility 0.8s ease;
+}
+
+.overlay.show {
+  display: flex;
+  opacity: 95%;
+  visibility: visible;
+}
+
 .work-content2 {
   position: relative;
   width: 720px;
@@ -294,7 +319,6 @@ h1 {
   max-width: auto;
   top: 0;
   left: 0%;
-  z-index: 1;
   transform: scale(1) translateY(0%);
   transition: 0.3s;
 }
@@ -303,7 +327,6 @@ h1 {
   max-width: 100%;
   top: 48%;
   left: 0%;
-  z-index: 3;
 }
 
 .work2:hover .iris1 {
@@ -339,7 +362,6 @@ h1 {
   position: absolute;
   top: 0;
   left: 0%;
-  z-index: 1;
   transform: scale(1.01) translateY(0%);
   transition: 0.3s;
 }
@@ -348,9 +370,14 @@ h1 {
   position: absolute;
   top: 0%;
   left: 0%;
-  z-index: 3;
   transform: scale(1.01);
   transition: 0.3s;
+}
+.uno4 {
+  position: absolute;
+  max-width: 100%;
+  top: 60%;
+  left: 5%;
 }
 
 .work3:hover {
@@ -467,6 +494,9 @@ a {
   .work-link img {
     width: 140px;
     height: 140px;
+  }
+  .uno4 {
+    left: 0%;
   }
 }
 @media screen and (max-width: 1200px) {
