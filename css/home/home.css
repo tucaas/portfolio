@@ -325,8 +325,8 @@ h1 {
 .iris3 {
   position: absolute;
   max-width: 100%;
-  top: 48%;
-  left: 0%;
+  top: 45%;
+  left: 5%;
 }
 
 .work2:hover .iris1 {
@@ -494,6 +494,13 @@ a {
     width: 140px;
     height: 140px;
   }
+
+  .bike2 img,
+  .iris3 img,
+  .uno4 img {
+    max-width: 100%;
+  }
+
   .uno4 {
     left: 0%;
   }
@@ -611,7 +618,7 @@ a {
   .ig::before,
   .wp::before,
   .email::before {
-    right: 250px;
+    /* right: 250px; */
     top: 6px;
   }
 }
