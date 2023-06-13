@@ -2,9 +2,11 @@
 const bikcraft = document.querySelector(".bikcraft");
 const iris = document.querySelector(".iris");
 const illustration = document.querySelector(".illustration");
+const movinto = document.querySelector(".movinto");
+const cosmetic = document.querySelector(".cosmetic");
 
 // Add an event listener to each element
-[bikcraft, iris, illustration].forEach((element) => {
+[bikcraft, iris, illustration, movinto, cosmetic].forEach((element) => {
   element.addEventListener("click", function (event) {
     // Check if the screen is smaller than 940px
     if (window.innerWidth < 940) {
