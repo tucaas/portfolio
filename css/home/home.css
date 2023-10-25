@@ -206,242 +206,257 @@ h1 {
   background: var(--c16);
 }
 .work {
-  display: grid;
-  justify-content: center;
-}
-
-.bikcraft,
-.iris,
-.cosmetic,
-.movinto,
-.illustration {
-  position: relative;
   display: flex;
-  align-items: center;
-}
-
-.separator {
-  content: "";
-  position: absolute;
-  top: 99%;
-  left: 2.5%;
-  z-index: 3;
-  height: 8px;
-  width: 95%;
-  border-radius: 4px;
-  background-color: var(--c5);
-}
-
-.work-content {
-  position: relative;
-  max-width: 720px;
-  max-height: 418px;
-  overflow-clip-margin: content-box;
-  overflow: clip;
-  overflow: hidden;
-  background-color: var(--c1);
-}
-
-.overlay {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-  position: absolute;
   width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: var(--c1);
-  z-index: 1;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.8s ease, visibility 0.8s ease;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
 }
 
-.overlay.show {
-  display: flex;
-  opacity: 95%;
-  visibility: visible;
-}
-
-.work-content2 {
+.work-container {
   position: relative;
-  width: 720px;
-  height: 418px;
-  background-color: var(--c1);
+  background-color: white;
+  width: 50%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.cosmeticon,
+.iris,
+.bike,
+.majestosa,
+.ilustration {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
 }
 
-.work-link img {
-  padding: 8px;
-  width: 205px;
-  height: 205px;
+.cosmeticon-title,
+.iris-logo,
+.gt-logo,
+.bike-title,
+.majestosa-title,
+.ilustration-title {
+  display: flex;
+  place-content: center;
+}
+
+.cosmeticon-title img,
+.iris-logo img,
+.bike-title img,
+.majestosa-title img,
+.ilustration-title img {
+  place-content: center;
+  max-width: 90%;
+  z-index: 999;
   transition: 0.3s;
 }
 
-.work-link img:hover {
+.gt {
+  background-color: #1255a5;
+}
+
+.gt-bg1 img,
+.gt-bg1-2 img,
+.gt-bg2 img,
+.gt-bg3 img,
+.gt-logo img {
+  position: absolute;
+}
+
+.gt-bg1 img {
+  left: 0%;
+  width: 100%;
+  opacity: 30%;
+  transition: 0.3s;
+}
+
+.gt-bg1-2 img {
+  left: 102%;
+  width: 100%;
+  opacity: 30%;
+  transition: 0.3s;
+}
+
+.gt-bg2 img {
+  left: -68.5%;
+  top: -100%;
+  width: 125%;
+}
+
+.gt-bg3 img {
+  left: 45%;
+  top: -100%;
+  width: 125%;
+}
+
+.gt-logo img {
+  max-width: 80%;
+  max-height: 80%;
+  transform: translateY(10%);
+  margin-left: 32px;
+  place-content: center;
+  max-width: 90%;
+  z-index: 999;
+  transition: 0.3s;
+}
+
+.gt:hover .gt-bg1 img {
+  transform: translateX(-15%);
+  transition: 20s;
+}
+
+.gt:hover .gt-bg1-2 img {
+  transform: translateX(-15%);
+  transition: 20s;
+}
+
+.gt:hover .gt-logo img {
+  transform: translateY(10%) scale(1.1);
+  transition: 0.3s;
+}
+
+.cosmeticon {
+  position: relative;
+  background: radial-gradient(
+      113.2% 105.31% at 14.15% 101.53%,
+      #f5f 0%,
+      rgba(255, 85, 255, 0.5) 45.09%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    radial-gradient(
+      99.78% 100.84% at 92.34% 2.94%,
+      #0adcdc 0%,
+      rgba(10, 220, 220, 0.5) 48.51%,
+      rgba(253, 255, 255, 0) 100%
+    ),
+    radial-gradient(128.96% 128.96% at 11.64% 6.07%, #7800ff 0%, #0569f0 100%);
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.cosmeticon::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: radial-gradient(
+      106.71% 100.06% at 82.8% -0.02%,
+      #f5f 0%,
+      rgba(255, 85, 255, 0.5) 45.09%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    radial-gradient(
+      104.67% 101.26% at 31.97% 100.02%,
+      #0adcdc 0%,
+      rgba(10, 220, 220, 0.5) 48.51%,
+      rgba(253, 255, 255, 0) 100%
+    ),
+    radial-gradient(128.96% 128.96% at 11.64% 6.07%, #7800ff 0%, #0569f0 100%);
+  /* z-index: -1; */
+  transition: opacity 0.3s linear;
+  opacity: 0;
+}
+
+.cosmeticon:hover::before {
+  transition: 15s;
+  opacity: 1;
+}
+
+.cosmeticon:hover .cosmeticon-title img {
   transform: scale(1.05);
   transition: 0.3s;
 }
 
-.work1:hover .bike1 {
-  transform: scale(1.3);
-  right: 10%;
-  top: 30%;
-  transition: 0.4s;
-}
-
-.bike1 {
-  transform: scale(1.01);
+.iris {
+  background-image: url("../../img/Frame\ 19\ \(2\).png");
+  background-size: cover;
   transition: 0.3s;
-  position: relative;
-  max-width: 100%;
-  top: 0%;
-  right: 0%;
-}
-.bike2 {
-  position: absolute;
-  top: 60%;
-  left: 10%;
-  max-width: 80%;
 }
 
-.iris1 {
+.iris-bg2 img {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  transition: 0.3s;
+}
+
+.iris:hover {
+  background-position: bottom;
+  transition: 12s;
+}
+
+.iris:hover .iris-bg2 img {
+  transform: scale(1.1) translateX(-5%);
+  transition: 0.3s;
+}
+
+.iris:hover .iris-logo img {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.bike {
+  background-image: url("../../img/bicicleta1\ 1.png");
+  background-size: cover;
+  transition: 0.3s;
+}
+
+.bike:hover {
+  background-position: 0.25lvi;
+  transition: 25s;
+}
+
+.bike:hover .bike-title img {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.majestosa {
   position: relative;
-  top: -10%;
+  overflow: hidden;
+}
+
+.majestosa::before {
+  content: "";
+  background-image: url("../../img/majestosa-bg.png");
+  background-size: cover;
+  transition: transform 0.3s;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
   left: 0;
-  width: 145%;
-  height: 145%;
-  transform: translateY(0%);
-  transition: 0.3s;
-}
-.iris2 {
-  position: absolute;
-  max-height: 100%;
-  max-width: auto;
-  top: 0;
-  left: 0%;
-  transform: scale(1) translateY(0%);
-  transition: 0.3s;
-}
-.iris3 {
-  position: absolute;
-  max-width: 100%;
-  top: 45%;
-  left: 5%;
+  /* z-index: -1; */
 }
 
-.work2:hover .iris1 {
-  transform: translateY(-20%);
-  transition: 0.4s;
-}
-.work2:hover .iris2 {
-  transform: scale(1.2) translateY(8%);
-  transition: 0.4s;
+.majestosa:hover::before {
+  transform: scale(2);
+  transition: 40s;
 }
 
-.cosmetic1 {
-  position: relative;
-  max-width: 250%;
-  transition: 0.5s;
-}
-.work3 .bike2 {
-  position: absolute;
-  top: 38%;
-  left: 19%;
-  max-width: 100%;
-}
-
-.work3:hover .cosmetic1 {
-  max-width: 100%;
-}
-
-.movinto1 {
-  position: relative;
-  transform: translateY(-30%);
+.majestosa:hover .majestosa-title img {
+  transform: scale(1.05);
   transition: 0.3s;
 }
 
-.work4 .bike2 {
-  left: 15%;
-  top: 55%;
-}
-
-.work4:hover .movinto1 {
-  transform: scale(1.1) translateY(-20%);
+.ilustration {
+  background-image: url("../../img/illustration-bg.png");
+  background-size: contain;
   transition: 0.3s;
 }
 
-.work-final {
-  background: linear-gradient(
-    180deg,
-    #f5af45 0%,
-    rgba(95, 197, 211, 0.25) 27.08%,
-    rgba(174, 95, 211, 0.25) 89.58%
-  );
-  background-color: white;
-}
-.uno1 {
-  max-width: 100%;
-  position: relative;
-  left: 0%;
-  right: 0%;
-  top: -7.91%;
-  bottom: -8.15%;
-  transform: translateY(0%);
-  transition: 0.3s;
-}
-.uno2 {
-  max-width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0%;
-  transform: scale(1.01) translateY(0%);
-  transition: 0.3s;
-}
-.uno3 {
-  max-width: 100%;
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  transform: scale(1.01);
-  transition: 0.3s;
-}
-.uno4 {
-  position: absolute;
-  max-width: 100%;
-  top: 60%;
-  left: 5%;
+.ilustration:hover {
+  background-position: -5000% 50%;
+  transition: 140s;
 }
 
-.work-final:hover {
-  background-color: salmon;
-  transition: 0.4s;
-}
-
-.work-final:hover .uno1 {
-  left: 5.69%;
-  right: -5.69%;
-  transform: translateY(20%);
-  transition: 0.6s;
-}
-.work-final:hover .uno2 {
-  left: -9%;
-  right: 0%;
-  transform: scale(1.3) translateY(7%);
-  /* filter: contrast(100%) saturate(100%); */
-  transition: 0.6s;
-}
-.work-final:hover .uno3 {
-  transform: scale(1.3) translateY(-6%);
-  left: 14%;
-  transition: 0.6s;
+.ilustration:hover .ilustration-title img {
+  transform: scale(1.05);
+  transition: 0.3s;
 }
 
 .footer-bg {
@@ -477,7 +492,7 @@ h1 {
 }
 
 .footer-menu li,
-a {
+.footer-menu a {
   margin-bottom: 8px;
   padding: 5px;
   position: relative;
@@ -519,31 +534,6 @@ a {
 }
 
 @media screen and (max-width: 1440px) {
-  .work-content {
-    max-width: 520px;
-    max-height: 300px;
-  }
-
-  .work-content2 {
-    width: 520px;
-    height: 300px;
-    gap: 0px;
-  }
-
-  .work-link img {
-    width: 140px;
-    height: 140px;
-  }
-
-  .bike2 img,
-  .iris3 img,
-  .uno4 img {
-    max-width: 100%;
-  }
-
-  .uno4 {
-    left: 0%;
-  }
 }
 @media screen and (max-width: 1200px) {
   .intro-bg {
@@ -552,22 +542,6 @@ a {
 
   .header-menu {
     display: none;
-  }
-
-  .work-content {
-    max-width: 450px;
-    max-height: 260px;
-  }
-
-  .work-content2 {
-    width: 450px;
-    height: 260px;
-    gap: 0px;
-  }
-
-  .work-link img {
-    width: 120px;
-    height: 120px;
   }
 
   .intro-content img {
@@ -607,36 +581,12 @@ a {
   .intro-txt-s {
     right: 20%;
   }
-
-  .work-content {
-    max-width: 720px;
-    max-height: 418px;
+  .work {
+    flex-direction: column;
   }
-
-  .work-content2 {
-    display: none;
-  }
-
-  .movinto1 {
-    position: relative;
-    transform: translateY(-50%);
-    transition: 0.3s;
-  }
-
-  .work4 .bike2 {
-    left: 10%;
-    top: 55%;
-  }
-
-  .work3 .bike2 {
-    max-width: 70%;
-    left: 14%;
-    top: 45%;
-  }
-
-  .work4:hover .movinto1 {
-    transform: scale(1.1) translateY(-52%);
-    transition: 0.3s;
+  .work-container {
+    width: 100%;
+    height: 200px;
   }
 }
 @media screen and (max-width: 800px) {
@@ -647,25 +597,8 @@ a {
     max-height: 120%;
     top: 55%;
   }
-  .work-content {
-    width: 375px;
-    height: 216px;
-    overflow: hidden;
-  }
-  .iris1 {
-    position: relative;
-    top: -10%;
-    left: 0;
-    max-width: 145%;
-    max-height: auto;
-    transform: translateY(0%);
-    transition: 0.3s;
-  }
-  .work1:hover .bike1 {
-    transform: scale(1.3);
-    right: 10%;
-    top: 10%;
-    transition: 0.4s;
+  .iris-bg2 img {
+    max-width: 70%;
   }
 }
 @media screen and (max-width: 600px) {
@@ -692,5 +625,10 @@ a {
 @media screen and (max-width: 400px) {
   .intro-content img {
     left: 48%;
+  }
+}
+@media screen and (max-width: 2900px) {
+  .iris-bg2 img {
+    max-width: 90%;
   }
 }
