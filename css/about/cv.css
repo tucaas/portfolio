@@ -17,7 +17,11 @@
 }
 
 .skills {
+  display: flex;
+  flex-direction: column;
   text-align: right;
+  justify-content: space-between;
+  padding-bottom: 64px;
 }
 
 .skill h1 {
