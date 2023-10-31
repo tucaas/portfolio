@@ -451,7 +451,7 @@ h1 {
 
 .ilustration:hover {
   background-position: -500000% 50%;
-  transition: 90s;
+  transition: 270s;
 }
 
 .ilustration:hover .ilustration-title img {
@@ -476,7 +476,6 @@ h1 {
 }
 .link {
   position: absolute;
-  padding: 12px;
   transition: 0.3s;
 }
 
