@@ -632,8 +632,8 @@ h1 {
     text-align: center;
   }
   .intro a::after {
-    right: -23px;
-    top: 3px;
+    right: -28px;
+    top: -2px;
     transform: scale(0.5);
   }
   .ig::before,
