@@ -450,8 +450,8 @@ h1 {
 }
 
 .ilustration:hover {
-  background-position: -5000% 50%;
-  transition: 140s;
+  background-position: -500000% 50%;
+  transition: 90s;
 }
 
 .ilustration:hover .ilustration-title img {
