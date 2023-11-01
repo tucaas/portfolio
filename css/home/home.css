@@ -378,24 +378,11 @@ h1 {
 
 .iris-bg2 img {
   position: absolute;
-  top: 0%;
+  max-height: 100%;
+  max-width: auto;
+  top: 0;
   left: 0%;
-  z-index: 1;
-  transition: 0.3s;
-}
-
-.iris:hover {
-  background-position: bottom;
-  transition: 12s;
-}
-
-.iris:hover .iris-bg2 img {
-  transform: scale(1.1) translateX(-5%);
-  transition: 0.3s;
-}
-
-.iris:hover .iris-logo img {
-  transform: scale(1.05);
+  transform: scale(1) translateY(0%);
   transition: 0.3s;
 }
 
