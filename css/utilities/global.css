@@ -23,9 +23,6 @@ a {
 ul {
   list-style: none;
 }
-.intro-content .no-show {
-  display: none;
-}
 
 .container {
   position: relative;
