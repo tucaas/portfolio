@@ -394,7 +394,7 @@ h1 {
 
 .bike:hover {
   background-position: 0.25lvi;
-  transition: 25s;
+  transition: 17s;
 }
 
 .bike:hover .bike-title img {
@@ -422,7 +422,7 @@ h1 {
 
 .majestosa:hover::before {
   transform: scale(2);
-  transition: 40s;
+  transition: 20s;
 }
 
 .majestosa:hover .majestosa-title img {
@@ -437,8 +437,8 @@ h1 {
 }
 
 .ilustration:hover {
-  background-position: -50000% 50%;
-  transition: 600s;
+  background-position: -500000% 50%;
+  transition: 50s;
 }
 
 .ilustration:hover .ilustration-title img {
