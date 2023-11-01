@@ -386,6 +386,21 @@ h1 {
   transition: 0.3s;
 }
 
+.iris:hover {
+  background-position: bottom;
+  transition: 10s;
+}
+
+.iris:hover .iris-bg2 img {
+  transform: scale(1.1) translateX(-5%);
+  transition: 0.3s;
+}
+
+.iris:hover .iris-logo img {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
 .bike {
   background-image: url("../../img/bicicleta1\ 1.png");
   background-size: cover;
