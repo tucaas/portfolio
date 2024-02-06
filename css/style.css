@@ -6,3 +6,5 @@
 @import "./about/about.css";
 @import "./about/cv.css";
 @import "./contact/contact.css";
+
+@import "./projects/gametrack.css";
