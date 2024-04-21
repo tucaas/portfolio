@@ -455,7 +455,7 @@ h1 {
 
 .ilustration:hover {
   background-position: -500000% 50%;
-  transition: 5000s;
+  transition: 20000s;
 }
 
 .ilustration:hover .ilustration-title img {
@@ -563,7 +563,11 @@ h1 {
   right: 100%;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1500px) {
+  .ilustration:hover {
+    background-position: -500000% 50%;
+    transition: 200s;
+  }
 }
 @media screen and (max-width: 1200px) {
   .intro-bg {
