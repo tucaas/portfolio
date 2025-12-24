@@ -1,15 +1,3 @@
-<<<<<<< HEAD
-@import "./utilities/global.css";
-@import "./utilities/colors.css";
-@import "./utilities/font.css";
-
-@import "./home/home.css";
-@import "./about/about.css";
-@import "./about/cv.css";
-@import "./contact/contact.css";
-
-@import "./projects/gametrack.css";
-=======
 @import "./utilities/global.css";
 @import "./utilities/colors.css";
 @import "./utilities/font.css";
@@ -27,4 +15,3 @@
 @import "./works/mj.css";
 
 @import "./projects/gametrack.css";
->>>>>>> 9da0a76 (teste)
