@@ -1,0 +1,302 @@
+.experiences {
+  position: relative;
+  background: var(--nc);
+  width: 100%;
+  z-index: 7;
+  padding: 32px 0 0 0;
+  box-sizing: border-box;
+  scroll-margin-top: 5.2rem;
+}
+
+.experiences-title {
+  width: auto;
+  background-color: var(--nc-contrast);
+  padding: 6px 12px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.tinysquare-clear {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: no-repeat center var(--nc);
+  transition: 0.1s;
+}
+
+.epxs {
+  display: flex;
+  flex-direction: column;
+}
+
+.epxs:hover .tinysquare-clear {
+  width: 40px;
+}
+
+.tinysquare-full {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: no-repeat center var(--nc);
+  transition: 0.3s;
+}
+
+.exp-blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+.exp-block {
+  box-sizing: border-box;
+  width: 100%;
+  background: var(--nc-trans-3);
+  border: 1px solid var(--nc1-5);
+}
+
+.exp-block:hover .tinysquare-full {
+  width: 100%;
+}
+
+.exp-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6px 12px;
+  gap: 8px;
+  background: var(--nc-contrast);
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.exp-txt {
+  padding: 12px;
+}
+
+.exp-txt p {
+  margin-bottom: 6px;
+}
+
+.floaty-bits {
+  position: relative;
+}
+
+.floaty {
+  position: absolute;
+  animation-name: updown;
+  animation-delay: -5s;
+  animation-duration: 8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.floaty img {
+  width: 100%;
+}
+
+.floaty-mob1,
+.floaty-mob2,
+.floaty-mob3,
+.floaty-mob4,
+.floaty-mob5 {
+  display: none;
+}
+
+.floaty1 {
+  left: 4%;
+}
+
+.floaty1 img {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.floaty2 {
+  right: 4%;
+  top: 200px;
+  rotate: 180deg;
+}
+
+.floaty3 {
+  right: 7%;
+  top: 600px;
+}
+
+.floaty4 {
+  left: 7%;
+  top: 630px;
+  rotate: 180deg;
+  animation-duration: 12s;
+}
+
+.floaty5 {
+  left: 37%;
+  top: 610px;
+}
+
+.floaty6 {
+  left: 42%;
+  top: 600px;
+  rotate: 180deg;
+}
+
+.floaty7 {
+  left: 56%;
+  top: 600px;
+  z-index: -1;
+}
+
+.floaty8 {
+  left: 60%;
+  top: 280px;
+  rotate: 180deg;
+  animation-duration: 10s;
+}
+
+.floaty9 {
+  left: 42%;
+  top: 600px;
+  rotate: 180deg;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-50%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.separator-exp {
+  background-image: url(../../img/separator-exp.svg);
+  min-height: 241px;
+  z-index: 9;
+  margin-top: -24px;
+  position: relative;
+}
+
+@media (max-width: 1700px) {
+  .exp-blocks {
+    grid-template-columns: 1fr 1fr;
+  }
+  .floaty3 {
+    right: 2%;
+    top: 600px;
+  }
+  .floaty4 {
+    left: 3%;
+    top: 660px;
+  }
+  .floaty5 {
+    left: 30%;
+    top: 850px;
+  }
+  .floaty6 {
+    top: 720px;
+    z-index: -1;
+  }
+  .floaty7 {
+    top: 600px;
+  }
+  .floaty8 {
+    z-index: -1;
+  }
+  .floaty9 {
+    left: 49.5%;
+    top: 600px;
+    z-index: -1;
+  }
+}
+
+@media (max-width: 1100px) {
+  .exp-blocks {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .separator-exp {
+    background-image: url(../../img/separator-exp.svg);
+    min-height: 125px;
+    z-index: 9;
+    margin-top: -24px;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  .floaty4 {
+    top: 1650px;
+  }
+  .floaty5 {
+    top: 1690px;
+  }
+  .floaty7 {
+    top: 1685px;
+    z-index: -1;
+  }
+  .floaty9 {
+    left: 2%;
+
+    top: 1050px;
+  }
+
+  .floaty-mob1,
+  .floaty-mob2,
+  .floaty-mob3,
+  .floaty-mob4 {
+    display: block;
+  }
+
+  .floaty-mob1 img,
+  .floaty-mob2 img,
+  .floaty-mob3 img,
+  .floaty-mob4 img,
+  .floaty-mob5 img {
+    width: 70% !important;
+  }
+
+  .floaty-mob1 {
+    left: 27%;
+    top: 1400px;
+    animation-duration: 12s;
+    rotate: 180deg;
+  }
+  .floaty-mob2 {
+    left: 20%;
+    top: 1380px;
+  }
+  .floaty-mob3 {
+    left: 55%;
+    top: 1390px;
+    rotate: 180deg;
+    animation-duration: 10s;
+  }
+  .floaty-mob3 img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+  .floaty-mob4 {
+    left: 70%;
+    top: 1390px;
+    rotate: 180deg;
+  }
+  .floaty-mob5 {
+    left: 86%;
+    top: 1390px;
+  }
+}

@@ -89,6 +89,18 @@
   --c14: #322400;
   --c15: #353228;
   --c16: #100b00;
+  --nc: #f8f6ee;
+  --nc0: #e3ddc5;
+  --nc1: #f1ebd2;
+  --nc1-5: #e9e2c5;
+  --nc2: #d5cfb8;
+  --nc3: #c7c2ac;
+  --nc4: #9a9584;
+  --nc-contrast: #4b483f;
+  --nc-constrast-1: #363329;
+  --nc-trans-1: rgba(227, 221, 197, 0.25);
+  --nc-trans-2: rgba(241, 235, 210, 0.5);
+  --nc-trans-3: rgba(241, 235, 210, 0.75);
 }
 
 .c1 {
@@ -144,4 +156,51 @@
 .c16 {
   color: var(--c16);
 }
+<<<<<<< HEAD
 >>>>>>> 9da0a76 (teste)
+=======
+
+.nc {
+  color: var(--nc);
+}
+
+.nc0 {
+  color: var(--nc0);
+}
+
+.nc1 {
+  color: var(--nc1);
+}
+
+.nc2 {
+  color: var(--nc2);
+}
+
+.nc3 {
+  color: var(--nc3);
+}
+
+.nc4 {
+  color: var(--nc4);
+}
+
+.nc-c {
+  color: var(--nc-contrast);
+}
+
+.nc-c1 {
+  color: var(--nc-constrast-1);
+}
+
+.nc-t1 {
+  color: var(--nc-trans-1);
+}
+
+.nc-t2 {
+  color: var(--nc-trans-2);
+}
+
+.nc-t3 {
+  color: var(--nc-trans-3);
+}
+>>>>>>> 980db0f (new portfolio)

@@ -15,9 +15,16 @@
 @import "./utilities/font.css";
 
 @import "./home/home.css";
-@import "./about/about.css";
-@import "./about/cv.css";
-@import "./contact/contact.css";
+@import "./home/about.css";
+@import "./home/exp.css";
+@import "./home/port.css";
+@import "./home/edu.css";
+
+@import "./works/gt.css";
+@import "./works/cosmeticon.css";
+@import "./works/iris.css";
+@import "./works/bike.css";
+@import "./works/mj.css";
 
 @import "./projects/gametrack.css";
 >>>>>>> 9da0a76 (teste)
