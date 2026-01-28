@@ -52,7 +52,7 @@
   height: 2px;
   width: 0%;
   background-color: var(--c1);
-  transition: width 3.6s ease;
+  transition: width 1s ease;
 }
 
 .link-box {
@@ -62,7 +62,7 @@
 
 .work:hover .link-container {
   display: flex;
-  transition: opacity 0.6s ease;
+  transition: opacity 0.2s ease;
   z-index: 2;
   opacity: 1;
 }
@@ -71,7 +71,7 @@
   animation-fill-mode: forwards;
   opacity: 0;
   animation-name: appear;
-  animation-delay: 0.6s;
+  animation-delay: 0.1s;
   animation-duration: 0.6s;
 }
 
@@ -79,8 +79,8 @@
   animation-fill-mode: forwards;
   opacity: 0;
   animation-name: appear;
-  animation-delay: 0.8s;
-  animation-duration: 0.6s;
+  animation-delay: 0.1s;
+  animation-duration: 0.8s;
 }
 
 .work:hover .separator {
