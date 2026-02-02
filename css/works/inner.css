@@ -98,6 +98,12 @@
   gap: 12px;
 }
 
+.icon-screens {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .wire-txt-3 .wire-txt-box {
   max-width: 600px;
 }
@@ -116,6 +122,15 @@
 }
 
 .wireframe8 img {
+  width: 100%;
+}
+
+.wireframe9 {
+  width: 40%;
+  margin: 0 auto;
+}
+
+.wireframe9 img {
   width: 100%;
 }
 
