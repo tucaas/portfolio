@@ -10,19 +10,6 @@
   background-size: contain;
 }
 
-.vertigo:hover .vertigo-logo img {
-  max-width: 50%;
-  max-height: 50%;
-  transform: translateY(10%);
-  transition: 0.2s;
-}
-
-.vertigo:hover .vertigo-disc-header {
-  top: -30%;
-  left: 45%;
-  transition: 0.2s;
-}
-
 .vt-header .vertigo-disc-header img {
   right: -10%;
   top: -40%;

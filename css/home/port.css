@@ -100,14 +100,13 @@
 
 .bravo-logo img {
   mix-blend-mode: multiply;
-  max-height: 80%;
-  transform: translateY(40%);
-  margin: 26px;
-  place-content: center;
-  max-width: 90%;
-  z-index: 9;
-  transition: 0.3s;
   position: absolute;
+  top: 30%;
+  left: 5%;
+  width: 400px;
+  max-width: 90%;
+  z-index: 1;
+  transition: 0.3s;
 }
 
 .bravo-can {
@@ -126,8 +125,8 @@
 }
 
 .bravo:hover .bravo-logo img {
-  max-width: 50%;
-  transform: translateY(10%);
+  max-width: 40%;
+  transform: translateY(-20%);
   transition: 0.2s;
 }
 
@@ -157,15 +156,13 @@
 
 .vertigo-logo img {
   mix-blend-mode: multiply;
-  max-width: 80%;
-  max-height: 80%;
-  transform: translateY(40%);
-  margin: 26px;
-  place-content: center;
-  max-width: 90%;
-  z-index: 9;
-  transition: 0.3s;
   position: absolute;
+  top: 25%;
+  left: 5%;
+  width: 400px;
+  max-width: 90%;
+  z-index: 1;
+  transition: 0.3s;
 }
 
 .vertigo-disc {
@@ -177,9 +174,9 @@
 }
 
 .vertigo:hover .vertigo-logo img {
-  max-width: 50%;
-  max-height: 50%;
-  transform: translateY(10%);
+  max-width: 30%;
+  max-height: 30%;
+  transform: translateY(-20%);
   transition: 0.2s;
 }
 
@@ -530,7 +527,7 @@
   .portfolio > :nth-child(1) .link-container,
   .portfolio-internal > :nth-child(1) .link-container {
     opacity: 1;
-    z-index: 1;
+    z-index: 9;
   }
 
   .portfolio > :nth-child(1) .separator,
@@ -548,6 +545,10 @@
 
   .work:hover {
     width: 100%;
+  }
+
+  .bravo-logo img {
+    z-index: 1;
   }
 
   .gt-logo img {
@@ -577,5 +578,27 @@
     max-height: 50%;
     transform: translateY(-32%);
     transition: 0.2s;
+  }
+
+  .work.active.bravo {
+    animation: bgmovelft 120s infinite linear;
+  }
+
+  .work.active.bravo .bravo-can {
+    width: 60%;
+    top: -10%;
+    left: 47%;
+    transition: 0.2s;
+  }
+
+  .work.active.bravo .bravo-logo img {
+    max-width: 50%;
+    transform: translateY(10%);
+    transition: 0.2s;
+  }
+
+  h2.nc0.st-s.work-text,
+  h2.nc-c.st-s.work-text {
+    text-align: right;
   }
 }
