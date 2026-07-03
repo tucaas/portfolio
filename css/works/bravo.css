@@ -1,0 +1,48 @@
+.inner-header-br {
+  width: 100%;
+  height: 410px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  position: relative;
+  user-select: none;
+  z-index: 8;
+  background: #cbcbcb;
+  background-size: contain;
+}
+
+.br-header {
+  width: 100%;
+  height: 410px;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  position: relative;
+  user-select: none;
+  z-index: 8;
+}
+
+.br-header .br-can img {
+  position: absolute;
+  max-width: 40%;
+  right: 10%;
+  top: 25%;
+}
+
+.br-header .br-bg-movin {
+  background-image: url("../../img/br-bg.png");
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+  position: absolute;
+  opacity: 0.1;
+  animation: bgmove 80s infinite linear;
+}
+
+.br-header .br-logo img {
+  max-height: 80%;
+  transform: translateY(20%);
+  margin-left: 32px;
+  place-content: center;
+  max-width: 40%;
+  z-index: 9;
+  transition: 0.3s;
+}
