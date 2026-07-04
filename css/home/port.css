@@ -1,3 +1,7 @@
+.work-bg {
+  scroll-margin-top: 4.8rem;
+}
+
 .portfolio {
   display: flex;
   width: 100%;
