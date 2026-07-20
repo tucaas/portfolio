@@ -52,6 +52,12 @@
   letter-spacing: 0.1em;
 }
 
+.f4 {
+  font:
+    300 1.25rem/1.5 "Red Hat Display",
+    sans-serif;
+}
+
 .ft {
   font:
     900 3.75rem "Red Hat Display",

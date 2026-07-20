@@ -117,6 +117,10 @@
   z-index: 2;
 }
 
+.bottom-text {
+  padding-bottom: 64px;
+}
+
 .ov-title {
   width: auto;
   background-color: var(--nc-contrast);
@@ -171,15 +175,26 @@
 }
 
 .wireframing-bg,
-.visual-design-bg {
-  background-color: var(--nc1);
+.visual-design-bg,
+.approach-bg {
+  background-color: transparent;
 }
 
-.wireframing,
+.wireframing {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+
 .work-description-title {
   display: flex;
   flex-direction: column;
-  background-color: var(--nc3);
+}
+
+.wireframing-2 {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--nc1);
 }
 
 .branding-img-1 {
@@ -201,7 +216,6 @@
 }
 
 .wire-img-2 {
-  width: 60%;
   z-index: 2;
 }
 
@@ -214,8 +228,8 @@
 }
 
 .wire-txt-1 {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 32px;
   padding: 32px 0 12px 0;
@@ -282,8 +296,8 @@
 }
 
 .wireframe8 {
+  padding: 4px 0 12px 0;
   width: 100%;
-  padding: 32px 0;
 }
 
 .wireframe8 img {
@@ -307,6 +321,12 @@
 .final-screens {
   display: flex;
   flex-direction: column;
+  z-index: 2;
+}
+
+.final-screens-2 {
+  display: flex;
+  gap: 32px;
   z-index: 2;
 }
 
@@ -354,12 +374,22 @@
 }
 
 .separator-wire {
-  background-image: url(../../img/separator-exp.svg);
+  background-image: url(../../img/separator-inner.svg);
   min-height: 241px;
   margin-top: 0;
   position: relative;
   background-position: top;
-  rotate: 180deg;
+}
+
+.project-description {
+  background-color: var(--nc1);
+}
+
+@media (max-width: 1200px) {
+  .wire-txt-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 1100px) {

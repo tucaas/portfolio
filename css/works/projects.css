@@ -32,6 +32,15 @@
 }
 
 .big-work {
+  display: grid;
+  grid-template-rows:
+    auto /* title */
+    350px /* image */
+    1fr; /* description */
+  height: 100%;
+}
+
+.learn-box {
   display: flex;
   flex-direction: column;
 }
@@ -47,15 +56,18 @@
   position: relative;
   text-align: left;
   opacity: 1;
-  height: auto;
   z-index: 6;
+  justify-content: space-around;
 }
 
 .big-work .internal-container-p {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  padding: 0px;
+  height: 100%;
   transition: 0.2s ease;
   box-sizing: border-box;
+  justify-content: space-between;
 }
 
 .big-work .internal-container-titles-p {
@@ -86,7 +98,7 @@
   top: 30%;
   left: 5%;
   width: 400px;
-  max-width: 90%;
+  max-width: 100%;
   z-index: 1;
   transition: 0.3s;
 }
@@ -118,7 +130,8 @@
 }
 
 .big-work:hover .bravo-logo-p img {
-  max-width: 60%;
+  max-width: 40%;
+  transition: 0.2s;
 }
 
 @keyframes bgmovelft {
@@ -155,7 +168,7 @@
 
 .big-work:hover .vertigo-logo-p img {
   width: 40%;
-  transform: translateY(30%);
+  transform: translateY(-10%);
   transition: 0.2s;
 }
 
@@ -472,7 +485,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1200px) {
   .portfolio-projects {
     grid-template-columns: 1fr;
     padding: 68px 24px;

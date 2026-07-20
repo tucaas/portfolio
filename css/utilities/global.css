@@ -322,13 +322,13 @@ li:hover .tinysquare3 {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  padding: 64px 0;
+  padding-top: 4px;
   gap: 32px;
   z-index: 2;
 }
 
-.ctas {
-  background: var(--nc1);
+.ctas-2 {
+  background: var(--nc3);
 }
 
 .soon.ctas {
