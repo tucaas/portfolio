@@ -186,6 +186,12 @@
   background-color: transparent;
 }
 
+.image-row {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
 .work-description-title {
   display: flex;
   flex-direction: column;
