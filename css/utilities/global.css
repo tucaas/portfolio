@@ -58,6 +58,16 @@ li {
   box-sizing: border-box;
 }
 
+.container-header {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 1920px;
+  padding: 0 154px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .container-2 {
   position: relative;
   width: 100%;
@@ -391,7 +401,8 @@ li:hover .tinysquare3 {
 }
 
 @media (max-width: 1600px) {
-  .container {
+  .container,
+  .container-header {
     padding: 0 100px;
   }
 
@@ -401,7 +412,8 @@ li:hover .tinysquare3 {
 }
 
 @media screen and (max-width: 1200px) {
-  .container {
+  .container,
+  .container-header {
     padding: 0 80px;
   }
   .burger {
@@ -413,7 +425,8 @@ li:hover .tinysquare3 {
   .intro.container-2 {
     height: 400px;
   }
-  .container {
+  .container,
+  .container-header {
     padding: 0 32px;
   }
   .container-2 {
