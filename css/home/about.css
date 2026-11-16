@@ -162,6 +162,7 @@
 
 .status-box {
   width: 100%;
+  height: fit-content;
   background: var(--nc-trans-1);
   user-select: none;
   box-sizing: border-box;
